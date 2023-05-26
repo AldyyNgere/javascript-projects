@@ -9,7 +9,7 @@ const colors = [
   "purple",
   "grey",
   "pink",
-  "orangared",
+  "orangered",
   "lightblue",
   "violet",
 ];
