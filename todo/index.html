@@ -11,7 +11,7 @@
     <div class="container">
       <!-- Todo Form body  -->
       <h1 class="header">Todo</h1>
-      <form action="#" class="todo-form">
+      <form action="#" class="todo-form" name="todo-form">
         <div class="todo-box">
           <label for="todo">todo :</label>
           <input type="text" id="todo" name="dueTime" />
@@ -33,16 +33,12 @@
           <tr>
             <th>Todo</th>
             <th>Due Time</th>
-            <th>Action</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody id="todo-tbody">
           <tr>
             <td>Coding</td>
             <td>24/05/2023</td>
-            <td>
-              <button id="delete-btn" class="delete-btn">delete</button>
-            </td>
           </tr>
         </tbody>
       </table>
