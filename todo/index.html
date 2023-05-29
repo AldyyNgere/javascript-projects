@@ -9,41 +9,35 @@
   </head>
   <body>
     <div class="container">
-      <!-- Todo Form body  -->
-      <h1 class="header">Todo</h1>
-      <form action="#" class="todo-form" name="todo-form">
-        <div class="todo-box">
-          <label for="todo">todo :</label>
-          <input type="text" id="todo" name="dueTime" />
-        </div>
-        <div class="todo-box">
-          <label for="dueTime">due time :</label>
-          <input type="date" name="dueTime" id="dueTime" />
-        </div>
-        <div class="todo-box center">
-          <input type="submit" value="submit" />
-        </div>
-      </form>
-
-      <!-- Todo Form body  end -->
-
-      <!-- Todo table body  -->
-      <table class="todo-table">
-        <thead>
-          <tr>
-            <th>Todo</th>
-            <th>Due Time</th>
-          </tr>
-        </thead>
-        <tbody id="todo-tbody">
-          <tr>
-            <td>Coding</td>
-            <td>24/05/2023</td>
-          </tr>
-        </tbody>
-      </table>
-      <!-- Todo table body  end -->
+      <div class="form-container">
+        <h1 class="header">Todo</h1>
+        <form action="#" name="todo-form">
+          <div class="input-box">
+            <label for="todo">Todo :</label>
+            <input type="text" name="todo" id="todo" />
+          </div>
+          <div class="input-box">
+            <label for="dueTime">Due Time :</label>
+            <input type="date" name="dueTime" id="dueTime" />
+          </div>
+          <div class="input-box">
+            <input type="submit" value="submit" />
+          </div>
+        </form>
+      </div>
+      <div class="table-container">
+        <table class="todo-table">
+          <thead>
+            <tr>
+              <th>Todo</th>
+              <th>Due Time</th>
+            </tr>
+          </thead>
+          <tbody class="todo-tbody"></tbody>
+        </table>
+      </div>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
