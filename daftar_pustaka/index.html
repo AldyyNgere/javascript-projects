@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftar Pustaka</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <h1 class="header">Daftar Pustaka</h1>
+        <form action="#" name="daftarPustaka-form">
+          <div class="input-box">
+            <label for="nama-penulis">Nama Penulis :</label>
+            <input type="text" name="nama-penulis" />
+          </div>
+
+          <div class="input-box">
+            <label for="tahun-terbit">Tahun Terbit :</label>
+            <input type="text" name="tahun-terbit" />
+          </div>
+
+          <div class="input-box">
+            <label for="judul-bacaan">Judul Bacaan :</label>
+            <input type="text" name="judul-bacaan" />
+          </div>
+
+          <div class="input-box">
+            <label for="kota-terbit">Kota Terbit :</label>
+            <input type="text" name="kota-terbit" />
+          </div>
+
+          <div class="input-box">
+            <label for="nama-penerbit">Nama Penerbit :</label>
+            <input type="text" name="nama-penerbit" />
+          </div>
+
+          <div class="input-box center submit-box">
+            <input type="submit" value="submit" />
+          </div>
+        </form>
+      </div>
+
+      <div class="table-container">
+        <table class="daftarPustaka-table">
+          <thead>
+            <tr>
+              <th>daftar pustaka</th>
+            </tr>
+          </thead>
+          <tbody class="daftarPustaka-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  padding-top: 7rem;
+}
+
+.header {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.input-box {
+  margin-bottom: 1rem;
+}
+
+.input-box input {
+  font-family: inherit;
+  font-size: 1.5rem;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.submit-box input[type="submit"] {
+  font-family: inherit;
+  padding: 0.6rem 1rem;
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.daftarPustaka-table {
+  border: solid 1px #000;
+  width: 25rem;
+  border-collapse: collapse;
+}
+
+.daftarPustaka-table td,
+.daftarPustaka-table th {
+  padding: 1rem;
+}
+
+.daftarPustaka-table thead {
+  color: #fff;
+  background-color: #000;
+}
