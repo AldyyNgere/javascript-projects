@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  padding-top: 8rem;
+}
+
+.header {
+  text-align: center;
+  font-size: 4.5rem;
+}
+
+.container h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.center input[id="username"] {
+  margin-right: 1rem;
+}
+
+.center input[type="submit"] {
+  cursor: pointer;
+}
+
+.question {
+  margin-bottom: 1rem;
+}
+
+.quest-answer table tr {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.quest1-cont {
+  display: none;
+}
+
+.container-quest {
+  padding: 0 5rem;
+}

@@ -1,22 +1,23 @@
-// Make daftar pustaka database
+// Database
 const dbNamaPenulis = [];
 const dbTahunTerbit = [];
 const dbJudulBacaan = [];
 const dbKotaTerbit = [];
 const dbNamaPenerbit = [];
 
-// Get data and push
+// Push data
 document.forms["daftarPustaka-form"].onsubmit = (e) => {
   let namaPenulis = document.forms["daftarPustaka-form"]["nama-penulis"].value;
-  dbNamaPenulis.push(namaPenulis);
   let tahunTerbit = document.forms["daftarPustaka-form"]["tahun-terbit"].value;
-  dbTahunTerbit.push(tahunTerbit);
   let judulBacaan = document.forms["daftarPustaka-form"]["judul-bacaan"].value;
-  dbJudulBacaan.push(judulBacaan);
   let kotaTerbit = document.forms["daftarPustaka-form"]["kota-terbit"].value;
-  dbKotaTerbit.push(kotaTerbit);
   let namaPenerbit =
     document.forms["daftarPustaka-form"]["nama-penerbit"].value;
+
+  dbNamaPenulis.push(namaPenulis);
+  dbTahunTerbit.push(tahunTerbit);
+  dbJudulBacaan.push(judulBacaan);
+  dbKotaTerbit.push(kotaTerbit);
   dbNamaPenerbit.push(namaPenerbit);
 
   e.preventDefault();
@@ -24,10 +25,11 @@ document.forms["daftarPustaka-form"].onsubmit = (e) => {
   dataProcess();
 };
 
-// Process daftar pustaka data
+// Function data process
 function dataProcess() {
   clearData();
-  for (let i = 0; i < dbNamaPenerbit; i++) {
+  // data iteration
+  for (let i = 0; i < dbNamaPenulis.length; i++) {
     const namaPenulis = dbNamaPenulis[i].split(" ");
     let firstName = namaPenulis[0];
     let lastName = namaPenulis[1];
@@ -49,10 +51,10 @@ function dataProcess() {
   }
 }
 
-// Clear data first
+// Function clear data
 function clearData() {
-  let tbody = document.querySelector(".daftarPustaka-tbody");
-  // make condition
+  const tbody = document.getElementById("daftarPustaka-tbody");
+  // make a condition
   while (tbody.firstChild) {
     tbody.removeChild(tbody.firstChild);
   }
@@ -68,12 +70,14 @@ function displayData(
   kotaTerbit,
   namaPenerbit
 ) {
-  // Make tr
+  // make table row
   let tr = document.createElement("tr");
 
-  // Make td for all data
+  // make table data
   let td = document.createElement("td");
-  td.textContent = `${lastName}, ${firstName}. ${tahunTerbit}. "${judulBacaan}". ${kotaTerbit}. ${namaPenerbit}`;
+  td.innerText = `${lastName}, ${firstName}. ${tahunTerbit} "${judulBacaan}". ${kotaTerbit}, ${namaPenerbit}`;
   tr.appendChild(td);
-  document.querySelector(".daftarPustaka-tbody").appendChild(tr);
+
+  let tbody = document.getElementById("daftarPustaka-tbody");
+  tbody.appendChild(tr);
 }
